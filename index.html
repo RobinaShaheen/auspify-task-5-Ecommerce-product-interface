@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>ShopFlow - E-Commerce Store</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+
+  <div class="header-container">
+
+    <a href="#" class="logo">
+      ShopFlow
+    </a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#products">Products</a>
+      <a href="#categories">Categories</a>
+    </nav>
+
+    <div class="header-actions">
+
+      <button
+        class="cart-button"
+        id="cartButton"
+        type="button"
+      >
+        🛒 Cart
+        <span id="cartCount">0</span>
+      </button>
+
+      <button
+        class="menu-button"
+        id="menuButton"
+        type="button"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
+
+    </div>
+
+  </div>
+
+</header>
+
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+
+      <div class="hero-content">
+
+        <p class="hero-label">
+          MODERN E-COMMERCE
+        </p>
+
+        <h1>
+          Discover products<br />
+          you'll love.
+        </h1>
+
+        <p class="hero-description">
+          Browse our collection, find what you need,
+          and add your favorites to your cart.
+        </p>
+
+        <a href="#products" class="hero-button">
+          Shop Now
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+
+      <div class="section-header">
+
+        <div>
+          <p class="section-label">OUR COLLECTION</p>
+
+          <h2>Featured Products</h2>
+        </div>
+
+        <p id="productCount">
+          0 products
+        </p>
+
+      </div>
+
+
+      <!-- Search and Filters -->
+      <div class="filters">
+
+        <div class="search-box">
+
+          <input
+            type="text"
+            id="searchInput"
+            placeholder="Search products..."
+            autocomplete="off"
+          />
+
+        </div>
+
+
+        <select id="categoryFilter">
+
+          <option value="all">
+            All Categories
+          </option>
+
+          <option value="electronics">
+            Electronics
+          </option>
+
+          <option value="fashion">
+            Fashion
+          </option>
+
+          <option value="home">
+            Home
+          </option>
+
+          <option value="accessories">
+            Accessories
+          </option>
+
+        </select>
+
+
+        <select id="sortFilter">
+
+          <option value="default">
+            Sort By
+          </option>
+
+          <option value="price-low">
+            Price: Low to High
+          </option>
+
+          <option value="price-high">
+            Price: High to Low
+          </option>
+
+          <option value="name">
+            Name: A-Z
+          </option>
+
+        </select>
+
+      </div>
+
+
+      <!-- Product Grid -->
+      <div
+        class="product-grid"
+        id="productGrid"
+      >
+      </div>
+
+
+      <!-- Empty State -->
+      <div
+        class="empty-state"
+        id="emptyState"
+      >
+        <h3>No products found</h3>
+
+        <p>
+          Try changing your search or filter.
+        </p>
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Cart Overlay -->
+  <div
+    class="cart-overlay"
+    id="cartOverlay"
+  ></div>
+
+
+  <!-- Shopping Cart -->
+  <aside
+    class="cart-sidebar"
+    id="cartSidebar"
+  >
+
+    <div class="cart-header">
+
+      <h2>Your Cart</h2>
+
+      <button
+        class="close-cart"
+        id="closeCart"
+        type="button"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div
+      class="cart-items"
+      id="cartItems"
+    >
+    </div>
+
+
+    <div class="cart-footer">
+
+      <div class="cart-total">
+
+        <span>Total</span>
+
+        <strong id="cartTotal">
+          $0.00
+        </strong>
+
+      </div>
+
+      <button
+        class="checkout-button"
+        id="checkoutButton"
+        type="button"
+      >
+        Checkout
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
